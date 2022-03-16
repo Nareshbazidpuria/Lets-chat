@@ -1,0 +1,53 @@
+
+body{
+    overflow-x: hidden;
+    background: rgb(16, 16, 16);
+}
+h1{
+    color: #ffffff;
+    text-shadow: none;
+}
+
+.container{
+    background: url(../chatbg2.jpg);
+}
+#darkModee{
+    color: white;
+}
+#inThisChat{
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+}
+ul{
+    background-color: rgb(77, 74, 74);
+    color: white;
+}
+.msgg{
+    text-shadow: none;
+    color: rgb(255, 255, 255);
+}
+.time{
+    color: rgb(230, 227, 227);
+}
+#msginp{
+    background-color: grey;
+    color: white;
+}
+.btn{
+    background-color: rgb(99, 99, 102) !important;
+}
+#mitm{
+    background-color: rgb(97, 96, 96);
+}
+li:hover{
+    background-color: rgb(0, 0, 0);
+}
+#burger .line{
+    background-color: rgb(255, 255, 255);
+}
+.l-1{
+    box-shadow: none;
+}
+.l-3{
+    box-shadow: none;
+}

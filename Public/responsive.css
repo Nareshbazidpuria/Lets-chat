@@ -1,0 +1,375 @@
+@media only screen and (max-width: 320px) {
+    #navbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        padding: 3px;
+        margin: 0 0;
+    }
+
+    #logo {
+        height: 30px;
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+    .navbarrrmar img {
+        height: 5rem !important;
+    }
+
+    .navbarrrmar h1 {
+        font-size: 1.2rem !important;
+    }
+
+    #lgnbtn {
+        width: 62%;
+    }
+
+    .hitc {
+        font-size: 12px;
+        top: 2.2%;
+        right: 2%;
+        animation-name: none;
+    }
+
+    ul {
+        top: 7%;
+        right: 3%;
+        min-width: 27%;
+        padding: 2px 3px;
+    }
+
+    .container {
+        width: 92%;
+        height: 444px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .nr, .nl {
+        font-size: 9px;
+    }
+
+    .msgg {
+        text-shadow: none;
+        padding: 3px 5px;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        font-size: 11px;
+    }
+
+    .msgg p {
+        padding-right: 20px;
+    }
+
+    .time {
+        font-size: 5.5px;
+        margin: -5px -20px 0 0;
+    }
+
+    .user-joined, .user-left {
+        font-size: 9px;
+    }
+
+    #msginp {
+        padding: 0.3rem 0.7rem;
+        margin: 1% 0% 2% 2%;
+        width: 75%;
+    }
+
+    .btn {
+        box-shadow: none;
+        padding: 0.3rem 0.7rem;
+        margin-left: -4px;
+    }
+
+    #msginp:hover, .btn:hover {
+        box-shadow: none;
+    }
+
+    .same {
+        font-size: 0.6rem;
+        box-shadow: 1px 1px 6px rgb(0 0 0 / 56%), -1px -1px 6px rgb(0 0 0 / 60%);
+    }
+
+    footer {
+        font-size: 0.55rem;
+        padding: 0.35rem;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+    #navbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        padding: 3px;
+        margin: 0 0;
+    }
+
+    #logo {
+        height: 30px;
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+    .navbarrrmar img {
+        height: 5rem !important;
+    }
+
+    .navbarrrmar h1 {
+        font-size: 1.2rem !important;
+    }
+
+    #lgnbtn {
+        width: 62%;
+    }
+
+    .hitc {
+        font-size: 12px;
+        top: 2.2%;
+        right: 2%;
+        animation-name: none;
+    }
+
+    ul {
+        top: 7%;
+        right: 3%;
+        min-width: 27%;
+        padding: 2px 3px;
+    }
+
+    .container {
+        width: 92%;
+        height: 444px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .nr, .nl {
+        font-size: 9px;
+    }
+
+    .msgg {
+        text-shadow: none;
+        padding: 3px 5px;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        font-size: 11px;
+    }
+
+    .msgg p {
+        padding-right: 20px;
+    }
+
+    .time {
+        font-size: 5.5px;
+        margin: -5px -20px 0 0;
+    }
+
+    .user-joined, .user-left {
+        font-size: 9px;
+    }
+
+    #msginp {
+        padding: 0.3rem 0.7rem;
+        margin: 1% 0% 2% 3%;
+        width: 77%;
+    }
+
+    .btn {
+        margin-left: 0rem;
+        margin-left: -4px;
+        padding: 0.28rem 0.5rem;
+    }
+
+    #msginp:hover, .btn:hover {
+        box-shadow: none;
+    }
+
+    .same {
+        font-size: 0.6rem;
+        box-shadow: 1px 1px 6px rgb(0 0 0 / 56%), -1px -1px 6px rgb(0 0 0 / 60%);
+    }
+
+    footer {
+        font-size: 0.55rem;
+        padding: 0.35rem;
+    }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 550px) {
+    #navbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        margin: 0 0;
+        padding: 3px;
+    }
+
+    #logo {
+        height: 30px;
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+    .navbarrrmar img {
+        height: 6.7rem !important;
+    }
+
+    .navbarrrmar h1 {
+        font-size: 1.8rem !important;
+    }
+
+    #lgnbtn {
+        width: 58%;
+    }
+
+    .hitc {
+        font-size: 12px;
+        top: 2.2%;
+        right: 2%;
+        animation-name: none;
+    }
+
+    ul {
+        top: 7%;
+        right: 3%;
+        min-width: 27%;
+        padding: 2px 3px;
+    }
+
+    .container {
+        width: 92%;
+        height: 444px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .nr, .nl {
+        font-size: 9px;
+    }
+
+    .msgg {
+        text-shadow: none;
+        padding: 3px 5px;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        font-size: 11px;
+    }
+
+    .msgg p {
+        padding-right: 20px;
+    }
+
+    .time {
+        font-size: 5.5px;
+        margin: -5px -20px 0 0;
+    }
+
+    .user-joined, .user-left {
+        font-size: 9px;
+    }
+
+    #msginp {
+        padding: 0.3rem 0.7rem;
+        margin: 1% 0% 2% 2%;
+        width: 83%;
+    }
+
+    .btn {
+        margin-left: 0rem;
+        margin-left: -4px;
+        padding: 0.28rem 0.5rem;
+    }
+
+    #msginp:hover, .btn:hover {
+        box-shadow: none;
+    }
+
+    .same {
+        font-size: 0.6rem;
+        box-shadow: 1px 1px 6px rgb(0 0 0 / 56%), -1px -1px 6px rgb(0 0 0 / 60%);
+    }
+
+    footer {
+        font-size: 0.55rem;
+        padding: 0.35rem;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 580px) {
+
+    .navbarrrmar img {
+        height: 8rem !important;
+    }
+
+    .navbarrrmar h1 {
+        font-size: 2rem !important;
+    }
+
+    #lgnbtn {
+        width: 57%;
+    }
+
+    #msginp {
+        padding: 0.3rem 0.7rem;
+        margin: 1% 0% 2% 23%;
+        width: 37%;
+    }
+
+    .same {
+        font-size: 0.9rem;
+    }
+
+    .btn{
+        margin-left: -4px;
+    }
+
+    #logo {
+        height: 40px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+}
+
+@media only screen and (min-width: 580px) and (max-width: 700px) {
+    #msginp {
+        margin: 1% 0% 2% 23%;
+        width: 39%;
+    }
+    .btn{
+        margin-left: -4px;
+        padding: 0.33rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 970px) {
+    #msginp {
+        margin: 1% 0% 2% 24%;
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 970px) and (max-width: 1300px) {
+    #msginp {
+        padding: 0.4rem 0.9rem;
+        margin: 1% 0% 2% 24%;
+        width: 43%;
+    }
+}

@@ -1,0 +1,73 @@
+#burger{
+    position: absolute;
+    top: 0;
+    right: 13px;
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.burger{
+    transform: translateX(0);
+}
+#burger .line{
+    width: 32px;
+    height: 1px;
+    background-color: black;
+    margin: 8px 0;
+    border-radius: 3px;
+    transition: 0.5s ease-in-out;
+}
+.l-1{
+    transform: translateY(10px) rotate(45deg);
+    box-shadow: 1px 0 6px rgb(61, 255, 2);
+}
+.l-3{
+    transform: translateY(-7px) rotate(-45deg);
+    box-shadow: 1px 0 6px rgb(61, 255, 2);
+}
+#mitm{
+    position: absolute;
+    top: 0;
+    left: -400px;
+    width: 380px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 2px 0 6px rgb(0 0 0);
+    font-size: 50px;
+    transition: all 0.5s ease-in-out;
+}
+.open{
+    transform: translateX(400px);
+}
+
+@media only screen and (max-width: 320px){
+    #mitm{
+        top: 0;
+        left: -400px;
+        width: 222px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 420px){
+        #mitm{
+        top: 0;
+        left: -400px;
+        width: 230px;
+    }
+}
+@media only screen and (min-width: 420px) and (max-width: 550px){
+        #mitm{
+        top: 0;
+        left: -400px;
+        width: 280px;
+    }
+}
+@media only screen and (min-width: 550px) and (max-width: 580px){
+        #mitm{
+        top: 0;
+        left: -400px;
+        width: 300px;
+    }
+}
