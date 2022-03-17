@@ -72,7 +72,7 @@ lgnbtn.addEventListener('click', () => {
                     }
                 }
                 let markup = `
-                            <h3 class="hitc">In This Chat <i class='fas fa-user'></i></h3>
+                            <h3 class="hitc">In This Chat <i class='fa fa-users'></i></h3>
                             <ul id="llll" class="ulitc">
                                 ${mkkk}
                             </ul>
@@ -90,7 +90,7 @@ lgnbtn.addEventListener('click', () => {
                     }
                 }
                 let markup = `
-                            <h3 class="hitc">In This Chat <i class='fas fa-user'></i></h3>
+                            <h3 class="hitc">In This Chat <i class='fa fa-users'></i></h3>
                             <ul id="llll" class="ulitc">
                                 ${marBrod}
                             </ul>
@@ -171,7 +171,7 @@ lgnbtn.addEventListener('click', () => {
                     }
                 }
                 let markup = `
-                            <h3 class="hitc">In This Chat <i class='fas fa-user'></i></h3>
+                            <h3 class="hitc">In This Chat <i class='fa fa-users'></i></h3>
                             <ul id="llll" class="ulitc">
                                 ${marBrod}
                             </ul>
