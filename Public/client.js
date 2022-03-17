@@ -27,7 +27,7 @@ lgnbtn.addEventListener('click', () => {
         console.log('fi if')
     }
     else {
-        if (usernameeePass.value == 'Naresh') {
+        if (usernameeePass.value == 'nkchat') {
             //  starting of the app ////////////////////////////
 
             usernamed.style.display = 'none';

@@ -54,6 +54,9 @@
         font-size: 9px;
     }
 
+    #darkModee{
+        font-size: .9rem !important;
+    }
     .msgg {
         text-shadow: none;
         padding: 3px 5px;
@@ -145,6 +148,9 @@
         right: 3%;
         min-width: 27%;
         padding: 2px 3px;
+    }
+    #darkModee{
+        font-size: 1rem !important;
     }
 
     .container {

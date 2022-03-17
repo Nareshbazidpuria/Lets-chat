@@ -106,16 +106,15 @@ h1{
 }
 .hitc{
     font-size: 19px;
-    text-align: center;
     border-bottom: 1px solid grey;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 #darkModee{
     display: block;
     position: absolute;
     top: 15px;
-    font-size: initial;
+    font-size: 1.4rem !important;
     right: 5%;
     color: #002e80;
     transition: all .9s;
