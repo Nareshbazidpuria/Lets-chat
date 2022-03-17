@@ -26,6 +26,12 @@ ul{
     text-shadow: none;
     color: rgb(255, 255, 255);
 }
+.user-joined{
+    color: white;
+}
+.user-left{
+    color: white;
+}
 .time{
     color: rgb(230, 227, 227);
 }

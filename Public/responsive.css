@@ -134,7 +134,7 @@
     }
 
     .hitc {
-        font-size: 12px;
+        font-size: 15px;
         top: 2.2%;
         right: 2%;
         animation-name: none;
@@ -149,13 +149,13 @@
 
     .container {
         width: 92%;
-        height: 444px;
+        height: 550px;
         padding: 5px;
         border-radius: 5px;
     }
 
     .nr, .nl {
-        font-size: 9px;
+        font-size: 11px;
     }
 
     .msgg {
@@ -163,24 +163,24 @@
         padding: 3px 5px;
         margin-bottom: 5px;
         border-radius: 2px;
-        font-size: 11px;
+        font-size: 15px;
     }
 
     .msgg p {
-        padding-right: 20px;
+        padding-right: 30px;
     }
 
     .time {
-        font-size: 5.5px;
-        margin: -5px -20px 0 0;
+        font-size: 7.5px;
+        margin: -5px -30px 0 0;
     }
 
     .user-joined, .user-left {
-        font-size: 9px;
+        font-size: 11px;
     }
 
     #msginp {
-        padding: 0.3rem 0.7rem;
+        padding: 0.5rem 0.7rem;
         margin: 1% 0% 2% 3%;
         width: 77%;
     }
@@ -188,7 +188,7 @@
     .btn {
         margin-left: 0rem;
         margin-left: -4px;
-        padding: 0.28rem 0.5rem;
+        padding: 0.5rem 0.5rem;
     }
 
     #msginp:hover, .btn:hover {
@@ -238,7 +238,7 @@
     }
 
     .hitc {
-        font-size: 12px;
+        font-size: 20px;
         top: 2.2%;
         right: 2%;
         animation-name: none;
@@ -253,13 +253,13 @@
 
     .container {
         width: 92%;
-        height: 444px;
+        height: 700px;
         padding: 5px;
         border-radius: 5px;
     }
 
     .nr, .nl {
-        font-size: 9px;
+        font-size: 13px;
     }
 
     .msgg {
@@ -267,20 +267,20 @@
         padding: 3px 5px;
         margin-bottom: 5px;
         border-radius: 2px;
-        font-size: 11px;
+        font-size: 16px;
     }
 
     .msgg p {
-        padding-right: 20px;
+        padding-right: 35px;
     }
 
     .time {
-        font-size: 5.5px;
-        margin: -5px -20px 0 0;
+        font-size: 9px;
+        margin: -5px -35px 0 0;
     }
 
     .user-joined, .user-left {
-        font-size: 9px;
+        font-size: 12px;
     }
 
     #msginp {
@@ -300,7 +300,7 @@
     }
 
     .same {
-        font-size: 0.6rem;
+        font-size: 1rem;
         box-shadow: 1px 1px 6px rgb(0 0 0 / 56%), -1px -1px 6px rgb(0 0 0 / 60%);
     }
 

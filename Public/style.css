@@ -121,21 +121,12 @@ h1{
     transition: all .9s;
 }
 ul{
-    /* top: 9%;
-    right: 23.9%;
-    min-width: 9%;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3), -1px -1px 5px rgba(0, 0, 0, 0.3); */
     padding: 5px 10px;
-    /* position: absolute; */
-    /* background-color: rgb(255, 255, 255); */
-    /* display: none;  */
     flex-direction: column;
 }
 li{
     list-style: none;
     display: block;
-    /* display: inline-block; */
-    /* text-align: center; */
     padding: .5rem 0.3rem;
     font-size: 19px;
 }
