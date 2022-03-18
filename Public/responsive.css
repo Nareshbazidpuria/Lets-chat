@@ -45,7 +45,7 @@
 
     .container {
         width: 92%;
-        height: 78vh;
+        height: 72vh;
         padding: 5px;
         border-radius: 5px;
     }
@@ -292,7 +292,7 @@
     #msginp {
         padding: 0.3rem 0.7rem;
         margin: 1% 0% 2% 2%;
-        width: 83%;
+        width: 80%;
     }
 
     .btn {
@@ -306,7 +306,7 @@
     }
 
     .same {
-        font-size: 1rem;
+        font-size: .9rem;
         box-shadow: 1px 1px 6px rgb(0 0 0 / 56%), -1px -1px 6px rgb(0 0 0 / 60%);
     }
 
