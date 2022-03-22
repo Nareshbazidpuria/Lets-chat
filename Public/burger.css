@@ -38,6 +38,7 @@
     box-shadow: 2px 0 6px rgb(0 0 0);
     font-size: 50px;
     transition: all 0.5s ease-in-out;
+    z-index: 100;
 }
 .open{
     transform: translateX(400px);

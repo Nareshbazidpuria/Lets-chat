@@ -4,6 +4,8 @@
     padding: 0;
 }
 body{
+    height: 100vh;
+    width: 100vw;
     overflow-x: hidden;
     background: linear-gradient(#fcff81c7, #df7d7d, #918cd3) no-repeat;
 }
@@ -261,7 +263,11 @@ h3:hover{
     top: 15px;
     right: 15px;
     font-size: 30px;
+    padding: 0.7rem;
+    border-radius: 10rem;
     cursor: pointer;
+    background-color: rgba(192, 189, 189, 0.795);
+    box-shadow: 1px 1px 6px rgb(192, 189, 189, 0.795), -1px -1px 6px rgb(192, 189, 189, 0.795);
 }
 .cnclSendBtn{
     font-family: 'Signika Negative', sans-serif;
