@@ -24,17 +24,16 @@ lgnbtn.addEventListener('click', () => {
     if (name === '') {
         usernameeeee.value = '';
         usernameeePass.value = '';
-        console.log('fi if')
     }
     else {
-        if (usernameeePass.value == 'nkchat') {
+        if (usernameeePass.value == 'nkchat' || usernameeePass.value == 'Nkchat') {
             //  starting of the app ////////////////////////////
 
             usernamed.style.display = 'none';
             forblock.style.display = 'none';
 
-            darkModee.addEventListener('click', ()=>{
-                if(!darkMode){
+            darkModee.addEventListener('click', () => {
+                if (!darkMode) {
                     let head = document.getElementsByTagName('head')
                     let linkCSS = document.createElement('link')
                     linkCSS.setAttribute('rel', 'stylesheet')
@@ -45,7 +44,7 @@ lgnbtn.addEventListener('click', () => {
                     darkModeebtn.classList.add('fa-sun-o')
                     darkMode = true;
                 }
-                else{
+                else {
                     drkModeCss.remove();
                     darkModeebtn.classList.add('fa-moon-o')
                     darkModeebtn.classList.remove('fa-sun-o')
@@ -97,7 +96,7 @@ lgnbtn.addEventListener('click', () => {
                             `;
                 itcDiv.innerHTML = markup;
                 mitm
-                .appendChild(itcDiv)
+                    .appendChild(itcDiv)
                 divStyling()
             })
 
@@ -157,10 +156,13 @@ lgnbtn.addEventListener('click', () => {
             socket.on('left', (namee) => {
                 let jDiv = document.createElement('div')
                 jDiv.classList.add('user-info', 'user-left')
-                jDiv.innerHTML = `<strong>${namee}</strong> has left the chat`
-                messageArea.appendChild(jDiv)
-                playJoined()
-                scrollToBottom()
+                if (namee !== null) {
+                    jDiv.innerHTML = `<strong>${namee}</strong> has left the chat`
+                    messageArea.appendChild(jDiv)
+                    playJoined()
+                    scrollToBottom()
+                }
+
             })
 
             socket.on('leftprint', (users) => {
@@ -206,4 +208,73 @@ function playJoined() {
 function playReceived() {
     rAudio = new Audio('received.mp3');
     rAudio.play();
+}
+
+
+function sendImage(e) {
+    var file = e.files[0];
+
+
+    var reader = new FileReader();
+
+    reader.addEventListener('load', () => {
+        sendImagePreview.style.display = 'flex';
+
+        if (file.size > 700000) {
+            sendImagePreview.innerHTML = `<h3>You Selected a Bigger Image</h3>
+            <h3>Please Select Another One</h3>
+            <div id="btnsForImageSend"><button id="cnclImageSend" class="btn cnclSendBtn">Cancel</button></div>`;
+
+            var imageToBeSend = `<img id="previewingImage" class="previewingImage" onclick="zoomTheImagee(this)" src="${reader.result}" alt="">`;
+            cnclImageSend.addEventListener('click', () => {
+                sendImagePreview.style.display = 'none';
+            });
+        }
+
+        else {
+            sendImagePreview.innerHTML = `<img id="previewingImage" src="${reader.result}" alt="">
+            <div id="btnsForImageSend"><button id="cnclImageSend" class="btn cnclSendBtn">Cancel</button><button id="sndImageSend" class="btn cnclSendBtn">Send</button></div>`;
+
+            var imageToBeSend = `<img id="previewingImage" class="previewingImage" onclick="zoomTheImagee(this)" src="${reader.result}" alt="">`;
+            cnclImageSend.addEventListener('click', () => {
+                sendImagePreview.style.display = 'none';
+            });
+            sndImageSend.addEventListener('click', () => {
+                sendImagePreview.style.display = 'none';
+    
+                let msg = {
+                    user: name,
+                    message: imageToBeSend
+                }
+                socket.emit('message', msg)
+    
+                let mainDiv = document.createElement('div');
+                className = 'right';
+                mainDiv.classList.add(className, 'msgg');
+                var markup = `<strong class="nr">You</strong><p>${msg.message}</p><p class="time">${timess}</p>`;
+                mainDiv.innerHTML = markup;
+                messageArea.appendChild(mainDiv);
+                scrollToBottom();
+            });
+        }
+
+    }, false);
+
+    if (file) {
+        reader.readAsDataURL(file);
+        // console.log('size', file.size)
+        // file.size = 800000;
+    }
+}
+function zoomTheImagee(photo) {
+    let photoSRC = photo.src;
+    largeImage.style.display = 'flex';
+    largeImage.innerHTML = `
+        <img id="previewingImage" class="largeImage" src="${photoSRC}" alt="">
+        <div id="crossLargeImage"><i class="fa fa-close"></i></div>
+        `;
+    let crossLargeImage = document.getElementById('crossLargeImage');
+    crossLargeImage.addEventListener('click', () => {
+        largeImage.style.display = 'none';
+    });
 }

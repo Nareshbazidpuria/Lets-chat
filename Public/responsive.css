@@ -79,9 +79,9 @@
     }
 
     #msginp {
-        padding: 0.3rem 0.7rem;
+        padding: 0.3rem 2rem 0.3rem 0.7rem;
         margin: 1% 0% 2% 2%;
-        width: 75%;
+        width: 68%;
     }
 
     .btn {
@@ -102,6 +102,17 @@
     footer {
         font-size: 0.55rem;
         padding: 0.35rem;
+    }
+    #slctImg {
+        position: absolute;
+        top: 16.5%;
+        left: 76.3%;
+    }
+    .fa-image {
+        font-size: 17px !important;
+    }
+    .previewingImage {
+        max-width: 66vw !important;
     }
 }
 
@@ -172,6 +183,14 @@
         font-size: 15px;
     }
 
+    #slctImg{
+        top: 21%;
+        left: 78%;
+    }
+    .fa-image{
+        font-size: 20px !important;
+    }
+
     .msgg p {
         padding-right: 30px;
     }
@@ -186,9 +205,9 @@
     }
 
     #msginp {
-        padding: 0.5rem 0.7rem;
+        padding: 0.5rem 2.4rem 0.5rem 0.7rem;
         margin: 1% 0% 2% 3%;
-        width: 77%;
+        width: 70%;
     }
 
     .btn {
@@ -210,9 +229,12 @@
         font-size: 0.55rem;
         padding: 0.35rem;
     }
+    .previewingImage {
+        max-width: 66vw !important;
+    }
 }
 
-@media only screen and (min-width: 420px) and (max-width: 550px) {
+@media only screen and (min-width: 420px) and (max-width: 551px) {
     #navbar {
         flex-direction: row;
         align-items: center;
@@ -290,9 +312,15 @@
     }
 
     #msginp {
-        padding: 0.3rem 0.7rem;
+        padding: 0.3rem 2.5rem 0.3rem 0.7rem;
         margin: 1% 0% 2% 2%;
-        width: 80%;
+        width: 74%;
+    }
+
+    #slctImg{
+        position: absolute;
+        top: 24%;
+        left: 68.7%;
     }
 
     .btn {
@@ -314,9 +342,21 @@
         font-size: 0.55rem;
         padding: 0.35rem;
     }
+
+    #slctImg {
+        position: absolute;
+        top: 22%;
+        left: 80.7%;
+    }
+    .fa-image {
+        font-size: 20px !important;
+    }
+    .previewingImage {
+        max-width: 66vw !important;
+    }
 }
 
-@media only screen and (min-width: 550px) and (max-width: 580px) {
+@media only screen and (min-width: 551px) and (max-width: 580px) {
 
     .navbarrrmar img {
         height: 8rem !important;
@@ -331,9 +371,9 @@
     }
 
     #msginp {
-        padding: 0.3rem 0.7rem;
+        padding: 0.3rem 2.7rem 0.3rem 0.7rem;
         margin: 1% 0% 2% 23%;
-        width: 37%;
+        width: 33%;
     }
 
     .same {
@@ -352,30 +392,52 @@
         font-size: 22px;
     }
 
+    .fa-image {
+        font-size: 20px !important;
+    }
+
+    #slctImg {
+        position: absolute;
+        top: 21%;
+        left: 59.3%;
+    }
+
 }
 
 @media only screen and (min-width: 580px) and (max-width: 700px) {
     #msginp {
-        margin: 1% 0% 2% 23%;
-        width: 39%;
+        border-radius: 2rem 0 0 2rem;
+        padding: 0.4rem 3rem 0.4rem 0.9rem;
+        margin: 1% 0% 2% 24%;
+        width: 33%;
     }
     .btn{
         margin-left: -4px;
         padding: 0.33rem 1rem;
     }
+    #slctImg{
+        left: 61.3%;
+    }
 }
 
 @media only screen and (min-width: 700px) and (max-width: 970px) {
     #msginp {
+        padding: 0.4rem 3rem 0.4rem 0.9rem;
         margin: 1% 0% 2% 24%;
-        width: 40%;
+        width: 36%;
+    }
+    #slctImg{
+        left: 63.3%;
     }
 }
 
 @media only screen and (min-width: 970px) and (max-width: 1300px) {
     #msginp {
-        padding: 0.4rem 0.9rem;
+        padding: 0.4rem 3rem 0.4rem 0.9rem;
         margin: 1% 0% 2% 24%;
-        width: 43%;
+        width: 41%;
+    }
+    #slctImg{
+        left: 66.7%;
     }
 }

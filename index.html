@@ -40,10 +40,19 @@
  
 
     <div class="container"></div>
+
+    <div id="sendImagePreview"></div>
+    <div id="largeImage"></div>
+
     <div class="message">
         <input type="text" id="msginp" class="same" placeholder="Type here..." autocomplete="off">
+
+        <label id="slctImg" for="inputImg"><i class="fa fa-image"></i></label>
+        <input type="file" id="inputImg" name="inputImg" onchange="sendImage(this);" accept="image/*">  
+
         <button id="btn" class="btn same">Send</button>
     </div>
+
     <footer>
         <span class="foot">Copyright &copy; Naresh Bazidpuria | All Rights Reserved</span>
     </footer>

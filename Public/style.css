@@ -117,7 +117,7 @@ h1{
     font-size: 1.4rem !important;
     right: 5%;
     color: #002e80;
-    transition: all .9s;
+    transition: all .3s;
 }
 ul{
     padding: 5px 10px;
@@ -187,18 +187,92 @@ h3:hover{
     background-color: #ff770038;
 }
 .message{
+    position: relative;
     justify-content: center;
     align-items: center;
 }
 #msginp{
     border-radius: 2rem 0 0 2rem;
-    padding: 0.4rem 0.9rem;
+    padding: 0.4rem 2.9rem 0.4rem 0.9rem;
     margin: 1% 0% 2% 24%;
-    width: 45%;
+    width: 43%;
 }
 #msginp:hover, .btn:hover{
     box-shadow: 5px 5px 10px rgb(0 0 0 / 56%), -5px -5px 10px rgb(0 0 0 / 60%);
 }
+#slctImg{
+    position: absolute;
+    top: 24%;
+    left: 68.7%;
+}
+.fa-image{
+    font-size: 25px !important;
+}
+#inputImg{
+    visibility: hidden;
+    position: absolute;
+}
+#sendImagePreview h3{
+    font-family: 'Signika Negative', sans-serif;
+}
+#sendImagePreview{
+    position: absolute;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    top: 50%;
+    display: none;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    box-shadow: 2px 2px 3px rgb(97 96 96 / 71%), -2px -2px 3px rgb(97 96 96 / 71%);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#previewingImage{
+    max-width: 95vw;
+    max-height: 75vh;
+    border-radius: .4rem;
+}
+.previewingImage{
+    max-width: 30vw !important;
+    max-height: 45vh !important;
+    border-radius: .4rem;
+}
+#largeImage{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+.largeImage{
+    max-width: 95vw !important;
+    max-height: 95vh !important;
+}
+#crossLargeImage .fa-close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.cnclSendBtn{
+    font-family: 'Signika Negative', sans-serif;
+    margin: 3rem 1rem 0.5rem 1rem !important;
+    border-radius: 5rem;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    padding: 0.7rem 2rem !important;
+}
+
 .btn:hover{
     cursor: pointer;
 }
