@@ -36,7 +36,7 @@ ul{
     color: rgb(230, 227, 227);
 }
 #msginp{
-    background-color: grey;
+    background-color: #101010;
     color: white;
 }
 .btn{
@@ -56,4 +56,10 @@ li:hover{
 }
 .l-3{
     box-shadow: none;
+}
+#sendImagePreview{
+    background-color: rgb(0, 0, 0);
+}
+.fa-image{
+    color: white;
 }
