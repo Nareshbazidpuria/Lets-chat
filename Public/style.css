@@ -6,6 +6,7 @@
 body{
     height: 100vh;
     width: 100vw;
+    max-height: 100vh;
     overflow-x: hidden;
     background: linear-gradient(#fcff81c7, #df7d7d, #918cd3) no-repeat;
 }
@@ -168,7 +169,10 @@ h3:hover{
     font-size: 20px;
     max-width: 80%;
     word-break: break-all;
+    position: relative;
 }
+
+
 .msgg p{
     padding-right: 40px;
 }
@@ -182,11 +186,21 @@ h3:hover{
     float: left;
     clear: both;
     background-color: #00ffe54f;
+    animation: swipeLeft .4s ease-in-out 1;
+}
+@keyframes swipeLeft {
+    0%{ left: 10rem;}
+    100%{ left: 0;}
 }
 .right{
     float: right;
     clear: both;
     background-color: #ff770038;
+    animation: swipeRight .4s ease-in-out 1;
+}
+@keyframes swipeRight {
+    0%{ right: 10rem;}
+    100%{ right: 0;}
 }
 .message{
     position: relative;

@@ -19,6 +19,7 @@ let lgnbtn = document.getElementById('lgnbtn');
 let usernameeeee = document.getElementById('usernameeeee');
 let usernameeePass = document.getElementById('usernameeePass');
 let usernameeePassVal = usernameeePass.value;
+
 lgnbtn.addEventListener('click', () => {
     name = usernameeeee.value.trim();
     if (name === '') {
@@ -67,9 +68,10 @@ lgnbtn.addEventListener('click', () => {
                 let mkkk = ``;
                 for (var key in users) {
                     if (users.hasOwnProperty(key)) {
-                        mkkk = mkkk + `<li>${users[key]}</li>`
+                        mkkk = mkkk + `<li>${users[key]}</li>`;
                     }
                 }
+                mkkk = mkkk + `<li id="leaveChattt"><strong>Leave Chat</strong></li>`;
                 let markup = `
                             <h3 class="hitc">In This Chat <i class='fa fa-users'></i></h3>
                             <ul id="llll" class="ulitc">
@@ -77,17 +79,22 @@ lgnbtn.addEventListener('click', () => {
                             </ul>
                             `;
                 itcDiv.innerHTML = markup;
-                mitm.appendChild(itcDiv)
-                divStyling()
-            })
+                mitm.appendChild(itcDiv);
+                divStyling();
+                leaveChattt.addEventListener('click', ()=>{
+                    location.reload();
+                });
+            });
+
             // Broadcasting
             socket.on('itcb', (users) => {
                 let marBrod = ``;
                 for (var key in users) {
                     if (users.hasOwnProperty(key)) {
-                        marBrod = marBrod + `<li>${users[key]}</li>`
+                        marBrod = marBrod + `<li>${users[key]}</li>`;
                     }
                 }
+                marBrod = marBrod + `<li id="leaveChattt"><strong>Leave Chat</strong></li>`;
                 let markup = `
                             <h3 class="hitc">In This Chat <i class='fa fa-users'></i></h3>
                             <ul id="llll" class="ulitc">
@@ -98,6 +105,9 @@ lgnbtn.addEventListener('click', () => {
                 mitm
                     .appendChild(itcDiv)
                 divStyling()
+                leaveChattt.addEventListener('click', ()=>{
+                    location.reload();
+                });
             })
 
             socket.on('new-user-joined', (name) => {
@@ -153,6 +163,7 @@ lgnbtn.addEventListener('click', () => {
                 scrollToBottom()
             })
 
+            // Leave Chat 
             socket.on('left', (namee) => {
                 let jDiv = document.createElement('div')
                 jDiv.classList.add('user-info', 'user-left')
@@ -172,6 +183,7 @@ lgnbtn.addEventListener('click', () => {
                         marBrod = marBrod + `<li>${users[key]}</li>`
                     }
                 }
+                marBrod = marBrod + `<li id="leaveChattt"><strong>Leave Chat</strong></li>`;
                 let markup = `
                             <h3 class="hitc">In This Chat <i class='fa fa-users'></i></h3>
                             <ul id="llll" class="ulitc">
@@ -181,6 +193,9 @@ lgnbtn.addEventListener('click', () => {
                 itcDiv.innerHTML = markup;
                 mitm.appendChild(itcDiv)
                 divStyling()
+                leaveChattt.addEventListener('click', ()=>{
+                    location.reload();
+                });
             });
         }
         else {
