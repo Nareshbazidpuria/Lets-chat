@@ -63,3 +63,9 @@ li:hover{
 .fa-image{
     color: white;
 }
+#sendImagePreview{
+    background-color: black;
+}
+#sendImagePreview h3{
+    color: white;
+}
