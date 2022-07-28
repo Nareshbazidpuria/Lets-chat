@@ -224,7 +224,10 @@ function playReceived() {
     rAudio = new Audio('received.mp3');
     rAudio.play();
 }
-
+function onloadf() {
+    prelaoder = document.querySelector('.preloader');
+    prelaoder.style.display = 'none'
+}
 
 function sendImage(e) {
     var file = e.files[0];

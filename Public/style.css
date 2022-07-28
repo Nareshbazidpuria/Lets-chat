@@ -10,6 +10,22 @@ body{
     overflow-x: hidden;
     background: linear-gradient(#fcff81c7, #df7d7d, #918cd3) no-repeat;
 }
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.preloaderGif{
+    height: 40vh;
+}
+
 #navbar{
 
     display: flex;
